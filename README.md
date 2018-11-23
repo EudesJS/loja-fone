@@ -17,3 +17,12 @@ Usamos para definir a navegação do usuário. Se você tem um texto que você q
 ```html
 <a href="https://www.collabcode.training">Collabcode.Training</a>
 ```
+
+# CSS
+
+É uma linguagem de estilo, isto significa que ela tem as seguintes responsabilidades:
+
+- Estilização visual;
+
+- `Reset CSS`  
+Utilizado para predenifir um comportamento padrão das regras CSS em todos os browsers, reseta as configurações, facilitando a aplicação de novos estilos.   
