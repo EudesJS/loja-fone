@@ -12,11 +12,56 @@ Usamos quando queremos definir um título
 
 - `<a>` - Link (a - anchor)  
 
-Usamos para definir a navegação do usuário. Se você tem um texto que você quer que o usuário seja redirecionado para outro lugar você pode usar esta tag combinada com o atributo `href`. Exemplo de um `a` que o usuário é redirecionado para o site da collabcode.training:
+    Usamos para definir a navegação do usuário. Se você tem um texto que você quer que o usuário seja redirecionado para outro lugar você pode usar esta tag combinada com o atributo `href`. Exemplo de um `a` que o usuário é redirecionado para o site da collabcode.training:
 
-```html
-<a href="https://www.collabcode.training">Collabcode.Training</a>
-```
+    ```html
+    <a href="https://www.collabcode.training">Collabcode.Training</a>
+    ```
+- Seletores: `Tag, ID e Class`
+
+    O seletor de tag é utilizado através do nome da tag, ficando restrito ao escopo daquela tag.
+
+    Exemplo de utilização de um seletor de tag em um elemento _`parágrafo`_:
+
+    ```html
+    <p>Este é um texto dentro da tag parágrafo</p>
+    ```
+    Para selecionar uma tag no CSS basta colocar apenas o nome da tag, conforme exemplo:
+    ```css
+    p {
+
+    } 
+    ```
+
+
+    O seletor com o atributo ID é utilizado nos elementos para atribuir uma identificação(ID).  
+    O nome do ID é de livre escolha e deve ser único na página.
+
+    Exemplo de utilização do atributo ID em um elemento _`div`_:
+    ```html
+    <div id="nome-escolhido"></div>
+    ```
+    Para selecionar um ID no CSS basta colocar uma `#`(hashtag) seguido do nome escolhido para o ID, conforme exemplo:
+    ```css
+    #nome-escolhido{
+
+    }
+    ```
+        
+
+    O seletor com o atributo Class é utilizado nos elementos para atribuir uma determinada classe.  
+    O nome da classe é de livre escolha e podem ser utilizados N elementos com a mesma classe.
+
+    Exemplo de utilização do atributo classe em um elemento _`div`_:
+    ```html
+    <div class="nome-escolhido"></div>
+    ```
+    Para selecionar uma classe no CSS basta colocar um `.`(ponto) seguido do nome escolhido para a classe, conforme exemplo:
+    ```css
+    .nome-escolhido{
+
+    }
+    ```
 
 # CSS
 

@@ -1,0 +1,17 @@
+button{
+  display:inline-block;
+  border:none;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 0;
+  text-align: center;
+  background-color: #252c41;
+  color:#fff;
+  font-family: Arial, 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+button a{
+  padding-right: 0;
+}

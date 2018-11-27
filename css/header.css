@@ -1,9 +1,7 @@
 body{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  min-height: 100vh;
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(100%);
 }
 
 header{
@@ -31,16 +29,6 @@ a{
   color: inherit;
 }
 
-a:nth-child(-n+2) {
+nav a:nth-child(-n+2) {
   margin-right:60px;
-}
-
-button{
-  border:none;
-  width: 199px;
-  height: 60px;
-  background-color: #252c41;
-  color:#fff;
-  font-family: Arial, 'Roboto', sans-serif;
-  font-size: 20px;
 }
