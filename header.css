@@ -1,28 +1,24 @@
 header{
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
   background-color: #e24647;
-}
-nav{
-  width:30%;
-  display:inline;
-}
-
-h1, a {
   color:#fff;
-  padding:0 5%;
+  overflow:hidden;
+  margin: 0 115px;
+  padding: 55px 60px 95px;
 }
 
 h1{
-  font-size:40px;
-  font-family: 'ArialMT';
-  margin-right:auto;
+  font-size: 40px;
+  font-family: Arial, 'Roboto', sans-serif;
+  float:left;
+}
+
+nav{
+  font-size: 21px;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  float:right;
 }
 
 a{
   text-decoration: none;
-  font-size:21px;
-  font-family: 'SegoeUI';
-  margin-left:auto;
+  color: inherit;
 }
