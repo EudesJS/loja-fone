@@ -90,4 +90,13 @@ O que define a **largura(width)** e a **altura(height)** de um elemento com a pr
     elemento-pai{
     overflow: hidden;
     }
-    ```
+    ```  
+- `Propriedade Position`
+
+    A propriedade position especifica como um elemento se posiciona em uma página.  
+    As propriedades **Top**, **Right**, **Bottom** e **Left** determinam a localização final de um elemento posicionado.
+
+    - _`Position absolute`_  
+        A **position absolute**(posição absoluta), assim como a propriedade float, cria um "novo contexto" no comportamento da página, não afetando mais os elementos próximos em relação a seus posicionamentos.
+        A largura e a altura de um elemnto com a propriedade **position absolute** também passam a ser definidas pelo conteúdo do elemento.
+        Top, Right, Bottom e Left movimentam o elemento em relação à página.
