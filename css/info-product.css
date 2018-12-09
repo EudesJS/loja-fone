@@ -2,9 +2,9 @@
   color:#fff;
   font-family: 'Roboto', sans-serif;
   text-align:justify;
-  width:50%;
+  width:553px;
   margin-right:0;
-  margin-left: auto;
+  float:right;
 }
 
 .info-title{
@@ -34,4 +34,24 @@
 .info-button{
   display: inline;
   margin-right:38px;
+}
+
+img{
+  width:547px;
+  height: 547px;
+  float:left;
+  padding-top:27px;
+  margin-left:0;
+  padding-left:105px;
+}
+
+.rounded-rectangle-1{
+  position:absolute;
+  vertical-align: middle;
+  margin-top:101px;
+  float:left;
+  width: 601px;
+  height: 574px;
+  border-radius: 0 150px 150px 0;
+  background-color: #fff;
 }
