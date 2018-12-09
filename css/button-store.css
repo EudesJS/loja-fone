@@ -1,5 +1,6 @@
-button{
+.button-store{
   display:inline-block;
+  box-sizing: border-box;
   border:none;
   width: 200px;
   height: 60px;
@@ -10,13 +11,22 @@ button{
   color:#fff;
   font-family: Arial, 'Roboto', sans-serif;
   font-size: 20px;
+  text-decoration: none;
 }
 
-button a{
+.button-store.-second{
+  background-color:transparent;
+  border: 2px solid #fff;
+  width: 218px;
+  line-height: 56px;
+}
+
+.button-store-second a{
   padding-right: 0;
+  
 }
 
-.action, .action-buy{
+.button-store-second, .action-buy{
   text-decoration: none;
   color: inherit;
 }
