@@ -5,4 +5,10 @@
   position: relative;
   top:150px;
   right:47px;
+  cursor:pointer;
+}
+
+.heart-image:hover{
+  transform:scale(1.4);
+  
 }

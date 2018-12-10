@@ -4,7 +4,7 @@
   margin-top:0;
   margin-bottom:20px;
   position:relative;
-  right:17px;
+  right:55px;
 }
  
 input.star{
@@ -12,6 +12,8 @@ input.star{
 }
  
 label.star {
+  width:25px;
+  height: 25px;
   float: right;
   padding: 10px;
   font-size: 36px;

@@ -12,16 +12,23 @@
   font-family: Arial, 'Roboto', sans-serif;
   font-size: 20px;
   text-decoration: none;
+  transition: all 300ms linear;
 }
 
-button.button-store.-second:hover{
+.button-store:hover,
+.button-store:focus{
   background-color: #fff;
   color:#E24647;
 }
 
-.button-store:hover{
+.button-store:active{
+  transform: scale(0.9);
+}
+
+.button-store.-second:hover,
+.button-store.-second:focus{
   background-color: #fff;
-  color:#000;
+  color:#E24647;
 }
 
 .button-store:hover{
