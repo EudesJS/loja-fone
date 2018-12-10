@@ -14,6 +14,16 @@
   text-decoration: none;
 }
 
+button.button-store.-second:hover{
+  background-color: #fff;
+  color:#E24647;
+}
+
+.button-store:hover{
+  background-color: #fff;
+  color:#000;
+}
+
 .button-store:hover{
   cursor: pointer;
 }
