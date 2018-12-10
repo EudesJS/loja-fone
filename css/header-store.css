@@ -17,6 +17,10 @@ body{
   text-transform: uppercase;
 }
 
+.title:hover{
+  cursor: pointer;
+}
+
 .navigation{
   font-size: 21px;
   font-family: 'Segoe UI', 'Roboto', sans-serif;

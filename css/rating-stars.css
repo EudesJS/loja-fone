@@ -19,6 +19,10 @@ label.star {
   transition: all .2s;
 }
 
+label.star:hover{
+  cursor: pointer;
+}
+
 label.star.star-1{
   padding-left:0;
   margin-left:0;
