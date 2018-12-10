@@ -1,0 +1,21 @@
+input.search{
+  width:360px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color:transparent;
+  display:block;
+  float:right;
+  position:relative;
+  margin-right:65px;
+  margin-bottom:0;
+  padding:8px;
+  color:#fff;
+}
+
+input.search::placeholder{
+  font-family: Arial, sans-serif;
+  width:56px;
+  color:#fff;
+  font-size: 18px;
+  font-weight: bold; 
+}
