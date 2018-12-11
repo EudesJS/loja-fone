@@ -7,7 +7,6 @@ body{
   overflow:hidden;
   padding-left: 60px;
   width:90%;
-  
 }
 
 .title{
@@ -30,8 +29,16 @@ body{
 .action, .action-buy{
   text-decoration: none;
   color: inherit;
+  position: relative;
+}
+
+.action:hover{
+  border-bottom: 1px solid #fff;
 }
 
 .navigation .action:nth-child(-n+2) {
   margin-right:60px;
 }
+
+
+
