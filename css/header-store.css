@@ -70,7 +70,18 @@ body{
 
   .header-store>.navigation{
     float:none;
-    text-align:center;
+    text-align:justify;
+  }
+
+  .header-store>.navigation::after{
+    content:'';
+    display: inline-block;
+    width:100%;
+  }
+
+  .header-store>.navigation>.action{
+    margin-right:0;
+    display:inline-block;
   }
 }
 
