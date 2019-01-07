@@ -70,19 +70,10 @@ body{
 
   .header-store>.navigation{
     float:none;
-    text-align:justify;
+    display:flex;
+    justify-content: space-between;
   }
-
-  .header-store>.navigation::after{
-    content:'';
-    display: inline-block;
-    width:100%;
-  }
-
-  .header-store>.navigation>.action{
-    margin-right:0;
-    display:inline-block;
-  }
+  
 }
 
 @media (max-width:1290px) {
