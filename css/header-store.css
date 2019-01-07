@@ -55,7 +55,53 @@ body{
   margin-right:60px;
 }
 
+@media (max-width:1305px) {
 
+  header.header-store{
+    margin-left:auto;
+    margin-right:auto;
+  }
 
+  .header-store>.title{
+    float:none;
+    text-align:center;
+    margin-bottom:20px;
+  }
 
+  .header-store>.navigation{
+    float:none;
+    text-align:center;
+  }
+}
+
+@media (max-width:1290px) {
+  header.header-store{
+    padding-left:0;
+  }
+}
+
+ @media (max-width:530px) {
+  .navigation .action:nth-child(-n+2) {
+    margin-right:15px;
+  }
+ }
+
+ @media (max-width:400px) {
+  .navigation .action:nth-child(-n+2) {
+    margin-right:8px;
+  }
+ }
+
+ @media (max-width:360px) {
+  .navigation .action:nth-child(-n+2) {
+    margin-right:8px;
+  }
+ }
+ 
+@media (max-width:355px) {
+  .header-store>.navigation  {
+    display:none;
+  }
+}
+ 
 

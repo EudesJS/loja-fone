@@ -19,3 +19,9 @@ input.search::placeholder{
   font-size: 18px;
   font-weight: bold; 
 }
+
+@media (max-width:1305px) {
+  input.search{
+    display:none;
+  }
+}
