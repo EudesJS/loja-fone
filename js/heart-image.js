@@ -16,4 +16,8 @@ function handleClick() {
 
 const $secondButton = window.document.querySelector(".button-store.-second");
 
+$secondButton.addEventListener("click", handleClick);
 
+function handleClick() {
+  console.log("ae");
+}
