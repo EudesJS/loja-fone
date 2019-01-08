@@ -165,4 +165,11 @@
   }
 }
 
+@media (max-width:355px) {
+  .rounded-rectangle-1{
+    margin-top:20px;
+    margin-bottom:40px;
+  }
+}
+
 
