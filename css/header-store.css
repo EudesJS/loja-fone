@@ -72,6 +72,7 @@ body{
     float:none;
     display:flex;
     justify-content: space-between;
+    align-content: center;
   }
   
 }
@@ -80,6 +81,12 @@ body{
   header.header-store{
     padding-left:0;
   }
+
+  .header-store>.navigation{
+    width:89%;
+    margin: 0 auto;
+  }
+
 }
 
  @media (max-width:530px) {
@@ -91,6 +98,10 @@ body{
  @media (max-width:400px) {
   .navigation .action:nth-child(-n+2) {
     margin-right:8px;
+  }
+  .header-store>.navigation{
+    width:100%;
+    
   }
  }
 
