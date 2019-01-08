@@ -15,7 +15,7 @@ input.search{
 input.search::placeholder{
   font-family: Arial, sans-serif;
   width:56px;
-  color:#fff;
+  color:inherit;
   font-size: 18px;
   font-weight: bold; 
 }
