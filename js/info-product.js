@@ -6,16 +6,23 @@
 5 - No momento que o usuário clicar nós queremos mostar um AE => OK
 */
 
-/*const $heart = window.document.querySelector(".heart");
+const $heart = window.document.querySelector(".heart");
 
 $heart.addEventListener("click", handleClick);
 
 function handleClick() {
-  console.log("ae");
-}*/
+  /*if ($heart.classList.contains("-active")) {
+    $heart.classList.remove("-active");
+  }else{
+    $heart.classList.add("-active");
+  }*/
 
-const $secondButton = window.document.querySelector(".button-store.-second");
-const $buy = window.document.querySelector(".action.-buy");
+  $heart.classList.toggle("-active");
+   
+}
+
+/*const $secondButton = document.querySelector(".button-store.-second");
+const $buy = document.querySelector(".action.-buy");
 
 $secondButton.addEventListener("click", handleClick);
 
@@ -23,4 +30,4 @@ function handleClick() {
   
   $buy.innerHTML = "ae";
   
-}
+}*/

@@ -7,6 +7,31 @@
   display:inline-block;
 }
 
+.info-product > .-active{
+  background:url(img/heart-active.png) 0 0 no-repeat;
+  
+}
+
+.info-product > .-active:before{
+  content: "";
+  position: absolute;
+  overflow:hidden;
+  display:inline;
+  width: 32px;
+  height: 28px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url(img/heart-active.png) 0 0 no-repeat;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.info-product > .-active:hover{
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
 .info-title{
   font-size: 25px;
   margin:140px 0 40px 0;
