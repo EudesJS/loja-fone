@@ -29,26 +29,29 @@ body{
 .action, .action-buy{
   text-decoration: none;
   color: inherit;
-  position: relative;
+  position:relative;
+  display:inline-block;
 }
 
-.action:after{
+.action::after {
   content: '';
   position: absolute;
   width: 0; 
   height: 1px;
   display: block;
-  margin-top: 5px;
+  margin-top: 10px;
   left: 0;
   background: #fff;
   transition: width .5s ease;
   -webkit-transition: width .5s ease;
+  
 }
  
-.action:hover:after{
+.action:hover::after{
   width: 100%;
   left: 0;
   background: #fff;
+  
 }
 
 .navigation .action:nth-child(-n+2) {
@@ -63,16 +66,20 @@ body{
   }
 
   .header-store>.title{
-    float:none;
     text-align:center;
     margin-bottom:20px;
   }
 
   .header-store>.navigation{
-    float:none;
-    display:flex;
-    justify-content: space-between;
-    align-content: center;
+    display: inline-block;
+    text-align:justify;
+  }
+
+  .header-store>.navigation:after{
+    content: '';
+    display:inline-block;
+    width:60%;
+    
   }
   
 }
@@ -82,40 +89,40 @@ body{
     padding-left:0;
   }
 
-  .header-store>.navigation{
-    width:89%;
-    margin: 0 auto;
-  }
  
-
 }
 
- @media (max-width:530px) {
-  .navigation .action:nth-child(-n+2) {
-    margin-right:15px;
+@media (max-width:680px) {
+  
+  .header-store>.title{
+    width:100%;
+    margin-bottom:20px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
- }
 
- @media (max-width:400px) {
-  .navigation .action:nth-child(-n+2) {
-    margin-right:8px;
-  }
   .header-store>.navigation{
     width:100%;
-    
+       
   }
- }
-
- @media (max-width:360px) {
-  .navigation .action:nth-child(-n+2) {
-    margin-right:8px;
-  }
- }
  
-@media (max-width:355px) {
-  .header-store>.navigation  {
-    display:none;
+  .navigation .action:nth-child(-n+2), .action.-buy {
+      margin-right:15px;
   }
+
 }
  
+ @media (max-width:400px) {
+  .navigation .action:nth-child(-n+2), .action.-buy {
+    margin-right:8px;
+  }
 
+  .header-store > .navigation  {
+    display:none;
+  }
+ }
+  
+ 
+ 
