@@ -30,6 +30,7 @@
 .info-product > .-active:hover{
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
+  transition: all .25s;
 }
 
 .info-title{
@@ -140,9 +141,7 @@
 
   .info-product > .info-body.-number{
     float:left;
-    padding-top:15px;
     width:70px;
-    right:90px;
     position:relative;
   }
   

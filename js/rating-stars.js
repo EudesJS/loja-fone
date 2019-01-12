@@ -1,42 +1,37 @@
-const $star = document.querySelector("label.star.star-1");
-const $star2 = document.querySelector("label.star.star-2");
-const $star3 = document.querySelector("label.star.star-3");
-const $star4 = document.querySelector("label.star.star-4");
-const $star5 = document.querySelector("label.star.star-5");
+document.addEventListener('DOMContentLoaded', function(){
+  addListeners();
+  setRating(); 
+});
 
-$star.addEventListener("click", handleClick);
-$star2.addEventListener("click", handleClick2);
-$star3.addEventListener("click", handleClick3);
-$star4.addEventListener("click", handleClick4);
-$star5.addEventListener("click", handleClick5);
+function addListeners(){
+  var stars = document.querySelectorAll('.star');
+  [].forEach.call(stars, function(star, index){
+    star.addEventListener('click', (function(idx){
+      console.log('adding rating on', index);
+      document.querySelector('.stars').setAttribute('data-rating',  idx + 1);  
+      console.log('Rating is now', idx+1);
+      setRating();
+    }).bind(window,index) );
+  });
+  
+}
 
-function handleClick() {
-    $star.classList.toggle("-active");
-  } 
+function setRating(){
+  var stars = document.querySelectorAll('.star');
+  var rating = parseInt( document.querySelector('.stars').getAttribute('data-rating') );
+  [].forEach.call(stars, function(star, index){
+    if(rating > index){
+      star.classList.add('rated');
+      console.log('added rated on', index );
+    }else{
+      star.classList.remove('rated');
+      console.log('removed rated on', index );
+    }
+  });
+}
 
-  function handleClick2(){
-    $star2.classList.toggle("-active2");
-  }
-
-  function handleClick3(){
-    $star3.classList.toggle("-active3");
-  }
-
-  function handleClick4(){
-    $star4.classList.toggle("-active4");
-  }
-
-  function handleClick5(){
-    $star5.classList.toggle("-active5");
-  }
-
-
-
-
-
-
-
-
+ 
+ 
 
 
 

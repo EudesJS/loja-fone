@@ -1,115 +1,40 @@
 .stars{
-  width: 270px;
   display: inline-block;
-  margin-top:0;
-  margin-bottom:20px;
-  position:relative;
-  right:88px;
+  position: relative;
+  right:40px;
+  float:left;
 }
- 
-input.star{
-  display: none;
-}
- 
-label.star {
-  width:25px;
-  height: 25px;
-  float: right;
-  padding: 10px;
-  font-size: 36px;
+
+.star{
   color: #000;
-  transition: all .2s;
-}
-
-label.star:hover{
-  cursor: pointer;
-}
-
-label.star.star-1{
-  padding-left:0;
-  margin-left:0;
-}
-
-
-/*input.star:checked ~ label.star:before {
-  content:'\f005';
-  color: #000;
-  transition: all .25s;
-}
- 
-
-input.star-5:checked ~ label.star:before {
-  color:#000;
-  text-shadow: 0 0 20px #952;
-}
- 
-input.star-1:checked ~ label.star:before {
-  color: #000;
-}
- 
-label.star:hover{
-  transform: rotate(-15deg) scale(1.3);
-}
- 
-label.star:before{
-  content:'\f006';
-  font-family: FontAwesome;
-}*/
-
-label.star {
+  font-size: 2rem;
+  padding: 0 2px; 
   display: inline-block;
   position: relative;
   font-family: FontAwesome;
-}
- 
-label.star::before {
-  content: "\f006";
+  transition: all .25s;
+  margin-bottom: 25px;
 }
 
-label.star.-active::before{
-  content:"\f005"
+.star::before{
+  content: '\f006';
+  cursor: pointer;
+  
 }
- 
-label.star.-active2:hover{
+.star:hover::before{
+  transform: rotate(-15deg) scale(1.3);
+  color: #000;
+}
+.star.rated::before{
+  content: '\f005';
+}
+
+.star.rated:hover{
   transform: rotate(-15deg) scale(1.3);
 }
-
-label.star.-active2::before{
-  content:"\f005"
-}
-
-label.star.-active3:hover{
-  transform: rotate(-15deg) scale(1.3);
-}
-
-label.star.-active3::before{
-  content:"\f005"
-}
-
-label.star.-active4:hover{
-  transform: rotate(-15deg) scale(1.3);
-}
-
-label.star.-active4::before{
-  content:"\f005"
-}
-
-label.star.-active5:hover{
-  transform: rotate(-15deg) scale(1.3);
-}
-
-label.star.-active5::before{
-  content:"\f005"
-}
- 
-label.star.-active:hover{
-  transform: rotate(-15deg) scale(1.3);
-}
-
 
 @media (max-width:1320px){
   .stars{
-    float:left;  
     margin-right:10px;
 }
 }
@@ -120,3 +45,8 @@ label.star.-active:hover{
   }
 }
 
+@media(max-width:340px){
+  .stars{
+    width:100%;
+  }
+}
