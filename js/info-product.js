@@ -17,7 +17,7 @@ function handleClick() {
     $heart.classList.add("-active");
   }*/
 
-  $heart.classList.toggle("-active");
+  this.classList.toggle("-active");
    
 }
 

@@ -23,8 +23,8 @@
   left: 0;
   z-index: -1;
   background: url(img/heart-active.png) 0 0 no-repeat;
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .info-product > .-active:hover{
