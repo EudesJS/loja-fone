@@ -10,6 +10,8 @@ input.search{
   margin-bottom:0;
   padding:8px;
   color:#fff;
+  background: url(img/search-icon.svg) no-repeat right;
+  background-size: 40px 40px;
 }
 
 input.search::placeholder{
@@ -20,8 +22,25 @@ input.search::placeholder{
   font-weight: bold; 
 }
 
+
 @media (max-width:1305px) {
   input.search{
-    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    transform:translateX(-88%);
+    background-color: #fff;
+    color:#000;
+    transition: transform 200ms linear;
   }
+
+  input.search.-active{
+    transform:translateX(0);
+    transition: transform 400ms cubic-bezier(0, 0, 0.96, 1.26);
+  }
+  
 }
+
+
+
+  
