@@ -116,7 +116,7 @@ body{
  
  @media (max-width:400px) {
   .navigation .action:nth-child(-n+2), .action.-buy {
-    margin-right:8px;
+   margin-right:8px;
   }
 
   .header-store > .navigation  {

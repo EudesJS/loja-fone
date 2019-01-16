@@ -1,11 +1,10 @@
 .info-product{
   color:#fff;
   font-family: 'Roboto', sans-serif;
-  text-align:justify;
   width:553px;
   margin-right:0;
   display:inline-block;
-  position:relative
+  position:relative;
 }
  
 .info-product > .-active{
