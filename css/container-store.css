@@ -10,6 +10,7 @@
   -moz-transform:  translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   width:87.2%;
+  box-shadow: -5px 0 5px -5px rgba(0,0,0,0.15), 5px 0 5px -5px rgba(0,0,0,0.15);
 }
 
 @media (max-width:1500px), (max-height:970px) {

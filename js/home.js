@@ -1,6 +1,6 @@
 let valorInicial = 10;
 const $secondButton = document.querySelector(".button-store.-second");
-const $cart = document.querySelector(".item.-buy");
+const $cart = document.querySelector(".action.-buy");
 
 $secondButton.addEventListener("click", handleClick);
 

@@ -90,6 +90,16 @@
   background-color: #fff;
 }
 
+.white-space{
+  background: #fff;
+  position:absolute;
+  top:196px;
+  left:0;
+  width: 10%;
+  height: 574px;
+  z-index:-200;  
+}
+
 @media (max-width:1320px) {
   
   .rounded-rectangle-1{
@@ -106,9 +116,9 @@
   .rounded-rectangle-1{
     height:100%;
     vertical-align: middle;
-    width: 80%;
-    margin-left: 10%;
-    margin-right:10%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right:5%;
     left: 0;
     border-radius: 150px 150px 150px 150px;
     margin-top:60px;
