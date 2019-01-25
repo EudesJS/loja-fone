@@ -22,9 +22,18 @@
         <header class="header-store">
             <h1 class="title">logo</h1>
             <nav class="navigation">
-                <a class="action" href="https://www.collabcode.training">Produtos</a>
-                <a class="action" href="https://www.collabcode.training">Serviços</a>
-                <a class="action -buy" href="https://www.collabcode.training">Carrinho (10)</a>
+                <ul id="menu" class="list -active">
+                    <li class="item -menu"><a href="#menu" class="menu">Menu</a></li>
+                    <li class="item">
+                        <a class="action" href="https://www.collabcode.training">Produtos</a>
+                    </li>
+                    <li class="item">
+                        <a class="action" href="https://www.collabcode.training">Serviços</a>
+                    </li>
+                    <li class="item -buy">
+                        <a class="action" href="https://www.collabcode.training">Carrinho (10)</a>
+                    </li>
+                </ul>
             </nav>
                 <input class="search" type="text" placeholder="Busca">
                 <img class="search-icon -active" src="img/search-icon.svg" alt="Busca">
@@ -65,5 +74,6 @@
     <script src="js/home.js"></script>
     <script src="js/rating-stars.js"></script>
     <script src="js/search.js"></script>
+    <script src="js/header-store.js"></script>
 </body>
 </html>

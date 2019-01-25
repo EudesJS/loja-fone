@@ -10,6 +10,7 @@ input.search{
   margin-bottom:0;
   padding:8px;
   color:#fff;
+  outline: none;
 }
 
 input.search::placeholder{
@@ -92,14 +93,15 @@ input.search::placeholder{
   .close-icon.-active{
     transform:translateX(-4%);
     transition: transform 400ms linear;
-    left:87%;
+    left:88%;
     padding:9px 12px;
     top:0;
+    z-index: 40;
   }
     
   }
 
-}
+
    
   
    

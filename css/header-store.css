@@ -20,17 +20,33 @@ body{
   cursor: pointer;
 }
 
-.navigation{
+.navigation {
   font-size: 21px;
   font-family: 'Segoe UI', 'Roboto', sans-serif;
   float:right;
 }
 
-.action, .action-buy{
+#menu{
+  text-align: center;
+}
+
+.header-store .item.-menu{
+  display: none;
+}
+
+.header-store .item{
+  display:inline-block;
+  margin-right:60px;
+}
+
+.header-store .item.-buy{
+  margin-right:0;
+}
+
+.action, .action.-buy{
   text-decoration: none;
   color: inherit;
   position:relative;
-  display:inline-block;
 }
 
 .action::after {
@@ -52,10 +68,6 @@ body{
   left: 0;
   background: #fff;
   
-}
-
-.navigation .action:nth-child(-n+2) {
-  margin-right:60px;
 }
 
 @media (max-width:1305px) {
@@ -84,11 +96,12 @@ body{
   
 }
 
+
 @media (max-width:1290px) {
+
   header.header-store{
     padding-left:0;
   }
-
  
 }
 
@@ -108,20 +121,74 @@ body{
        
   }
  
-  .navigation .action:nth-child(-n+2), .action.-buy {
+  .header-store .item, .item.-buy {
       margin-right:15px;
   }
 
 }
  
- @media (max-width:400px) {
-  .navigation .action:nth-child(-n+2), .action.-buy {
-   margin-right:8px;
+ @media (max-width:410px) {
+
+  .header-store .item.-menu  {
+    display: inline-block;
+    background: url(../img/menu-icon.svg) #fff center no-repeat;
+    box-sizing: border-box;
+    width: 45px;
+    height: 33px;
+    text-indent: -9999px;
+    margin-right: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    transform: translateX(-100%);
+    transition: transform 400ms 100ms linear;
+    cursor: pointer;
   }
 
-  .header-store > .navigation  {
-    display:none;
+  .header-store a.menu{
+    text-decoration: none;
+    color:#fff;
   }
+
+  .header-store .item, .item.-buy {
+   margin-right:8px;
+  }
+  
+  .header-store .list{
+    background-color:#fff;
+    color: #000;
+    width: 100vw;
+    padding: 40px 0 20px;
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index:20;
+    transform: translateX(100%);
+    transition: transform 300ms linear;
+  }
+
+  .header-store .list.-active {
+    transform: translateX(0);
+    transition: transform 100ms linear;
+  }
+
+  .header-store .list.-active .item.-menu{
+    background-image: url(../img/close-icon.svg);
+    transform: translateX(0);
+    transition:none;
+  }
+
+  #menu.list, #menu.list.-active{
+    padding-top:20px;
+  }
+
+  .header-store .item{
+    display: block;
+    font-size: 21px;
+    font-family: inherit;
+    line-height: 4vh;
+  }
+
  }
   
  
